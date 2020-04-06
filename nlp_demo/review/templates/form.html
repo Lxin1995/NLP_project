@@ -1,0 +1,10 @@
+{% extends "layout.html" %}    {# This syntax is used by a template engine that reads this file and generates de final HTML. #}
+
+{% block body %}
+<br />   {# 换行 #}                     {# action: 规定当提交表单时向何处发送表单数据。 #}
+<form action="/form/" method="post">   {# method='post':以 HTTP post 事务的形式发送表单数据（form-data） #}
+&nbsp;&nbsp;Review Text: {{form.review_text}} <br />
+<br />
+    {{form.go}}<br />
+</form>
+{% endblock %}

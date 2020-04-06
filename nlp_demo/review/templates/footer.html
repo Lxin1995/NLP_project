@@ -1,0 +1,16 @@
+<footer id="footer">
+  <div class="container clearfix">
+    <div class="text-muted pull-left">
+      {% if config.SITE_ABOUT %}
+      <a href="{{config.SITE_ABOUT}}">About</a>
+      {% endif %}
+      <span class="sep">•</span>    {# 使用 <span> 元素对文本中的一部分进行着色 #}
+      <a href="{{config.SITE_AUTHOR}}">Authors</a>
+    <a href="{{ url_for('.about') }}">Method</a>
+    </div>
+    <p class=" credit pull-right">
+    &copy;<time datetime="{{config.SITE_TIME}}">{{config.SITE_TIME.year}}</time> {{config.SITE_COMPANY}} All rights reserved.
+    </p>
+
+  </div>
+</footer>
